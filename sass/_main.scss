@@ -1,0 +1,38 @@
+@use 'variables' as v;
+
+main{
+    margin: 0 2.6875rem;
+    margin-top: 0.4375rem;
+    margin-bottom: 4rem;
+    text-align: center;
+
+    & img{
+        margin-bottom: 52px;
+        width: 298px;
+        height: 210px;
+    }
+
+    & h1{
+        margin-bottom: 14px;
+        font-size: 23px;
+    }
+
+    & p{
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    & button{
+        width: 193px;
+        height: 41px;
+        color: v.$cl-primary-violet;
+        border-radius: 20px;
+        border: none;
+    }
+}
+
+.main{
+   
+    
+}

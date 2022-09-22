@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+footer{
+
+}
+
+.footer{
+    &__logo{
+        text-align: center;
+    }
+}

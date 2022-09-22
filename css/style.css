@@ -1,16 +1,73 @@
-/*# sourceMappingURL=style.css.map */
-.facebook{
-    color: green;
-    font-size: 100px;
-    border: 2px green solid;
-    padding: 20px;
-    width: 100px;
-    text-align: center;
-    border-radius: 100%;
-    transition: color,border 150ms ease-in-out;
+html {
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
-.facebook:hover{
-    color : purple;
-    border: purple 2px solid;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
+
+html, body, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  position: relative;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(257deg, 40%, 49%);
+}
+
+.logo::before {
+  position: absolute;
+  padding: 28px 28px;
+  border: 1px white solid;
+  border-radius: 50%;
+  top: 100px;
+}
+
+header {
+  padding: 2.4375rem 0;
+  padding-left: 2.5rem;
+}
+header img {
+  height: 1.875rem;
+}
+
+main {
+  margin: 0 2.6875rem;
+  margin-top: 0.4375rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+main img {
+  margin-bottom: 52px;
+  width: 298px;
+  height: 210px;
+}
+main h1 {
+  margin-bottom: 14px;
+  font-size: 23px;
+}
+main p {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 25px;
+}
+main button {
+  width: 193px;
+  height: 41px;
+  color: hsl(257deg, 40%, 49%);
+  border-radius: 20px;
+  border: none;
+}
+
+.footer__logo {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

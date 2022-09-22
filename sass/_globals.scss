@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 html{
     font-size: 100%;
     box-sizing: border-box;
@@ -9,6 +11,25 @@ html,body,h1,h2,h3,h4,p{
     margin: 0;
     padding: 0;
 }
+
+i{
+    position: relative;
+}
+
 body{
-    
+    font-family: v.$ff-heading-poppins;
+    color: white;
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: v.$cl-primary-violet;
+}
+
+.logo{
+    &::before{
+        position: absolute;
+        padding: 28px 28px;
+        border: 1px white solid;
+        border-radius: 50%;
+        top: 100px;
+    }
 }
