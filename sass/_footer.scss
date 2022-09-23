@@ -1,11 +1,18 @@
 @use 'variables' as v;
 
 footer{
-
+    &>i{
+        width: 200px;
+    }
 }
 
 .footer{
     &__logo{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        & i:not(:last-child){
+            margin-right: 13px;
+        }
     }
+    
 }

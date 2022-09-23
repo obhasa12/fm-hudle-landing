@@ -23,21 +23,47 @@ body {
   background-repeat: no-repeat;
   background-color: hsl(257deg, 40%, 49%);
 }
+@media (min-width: 64em) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+  }
+}
 
-.logo::before {
-  position: absolute;
-  padding: 28px 28px;
-  border: 1px white solid;
-  border-radius: 50%;
-  top: 100px;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: white solid 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 250 ease-in-out;
+}
+.logo:hover {
+  color: hsl(300deg, 69%, 71%);
+  border-color: hsl(300deg, 69%, 71%);
 }
 
 header {
   padding: 2.4375rem 0;
   padding-left: 2.5rem;
 }
+@media (min-width: 64em) {
+  header {
+    padding: 44px 0;
+    padding-left: 80px;
+  }
+}
 header img {
   height: 1.875rem;
+}
+@media (min-width: 64em) {
+  header img {
+    height: 47px;
+  }
 }
 
 main {
@@ -46,19 +72,40 @@ main {
   margin-bottom: 4rem;
   text-align: center;
 }
+@media (min-width: 64em) {
+  main {
+    margin: 0 80px;
+  }
+}
 main img {
   margin-bottom: 52px;
   width: 298px;
   height: 210px;
 }
+@media (min-width: 64em) {
+  main img {
+    width: 697px;
+    height: 495px;
+  }
+}
 main h1 {
   margin-bottom: 14px;
   font-size: 23px;
+}
+@media (min-width: 64em) {
+  main h1 {
+    font-size: 39px;
+  }
 }
 main p {
   margin-bottom: 24px;
   font-size: 14px;
   line-height: 25px;
+}
+@media (min-width: 64em) {
+  main p {
+    font-size: 15px;
+  }
 }
 main button {
   width: 193px;
@@ -66,8 +113,45 @@ main button {
   color: hsl(257deg, 40%, 49%);
   border-radius: 20px;
   border: none;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+main button:hover {
+  color: white;
+  background-color: hsl(300deg, 69%, 71%);
+}
+
+@media (min-width: 64em) {
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 64em) {
+  .main__images {
+    flex: 2;
+    width: 697px;
+    height: 495px;
+  }
+}
+@media (min-width: 64em) {
+  .main__description {
+    margin-top: 50px;
+    margin-left: 49px;
+    width: 584px;
+    height: 495px;
+    text-align: left;
+  }
+}
+
+footer > i {
+  width: 200px;
 }
 
 .footer__logo {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer__logo i:not(:last-child) {
+  margin-right: 13px;
 }/*# sourceMappingURL=style.css.map */

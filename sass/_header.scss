@@ -1,8 +1,18 @@
+@use 'mixins' as m;
+
 header{
-    padding: 2.4375rem 0 ;
+    padding: 2.4375rem 0;
     padding-left: 2.5rem;
+    @include m.breakpoints-up(large){
+        padding: 44px 0;
+        padding-left: 80px;
+    }
 
     & img{
         height: 1.875rem;
+
+        @include m.breakpoints-up(large){
+            height: 47px;
+        }
     }
 }

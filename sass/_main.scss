@@ -1,26 +1,44 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 main{
     margin: 0 2.6875rem;
     margin-top: 0.4375rem;
     margin-bottom: 4rem;
     text-align: center;
+    @include m.breakpoints-up(large){
+        // display: flex;
+        // flex-direction: row;
+        margin: 0 80px;
+    }
 
+   
     & img{
         margin-bottom: 52px;
         width: 298px;
         height: 210px;
+        @include m.breakpoints-up(large){
+            width: 697px;
+            height: 495px;
+            
+        }
     }
 
     & h1{
         margin-bottom: 14px;
         font-size: 23px;
+        @include m.breakpoints-up(large){
+            font-size: 39px;
+        }
     }
 
     & p{
         margin-bottom: 24px;
         font-size: 14px;
         line-height: 25px;
+        @include m.breakpoints-up(large){
+            font-size: 15px;
+        }
     }
 
     & button{
@@ -29,10 +47,37 @@ main{
         color: v.$cl-primary-violet;
         border-radius: 20px;
         border: none;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+
+        &:hover{
+            color: white;
+            background-color: v.$cl-primary-sf-magenta;
+        }
     }
 }
 
 .main{
-   
-    
+    @include m.breakpoints-up(large){
+        display: flex;
+        flex-direction: row;
+    }
+ 
+    &__images{
+        @include m.breakpoints-up(large){
+            flex: 2;
+            width: 697px;
+            height: 495px;
+        }
+    }
+
+    &__description{
+        @include m.breakpoints-up(large){
+            margin-top: 50px;
+            margin-left: 49px;
+            width: 584px;
+            height: 495px;
+            text-align: left;
+        }
+    }
 }
